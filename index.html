@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Mind Map</title>
+  <link rel="stylesheet" href=".dist/styles/Fstyle.css">
+  <link rel="icon" type="image/svg+xml" href=".dist/pic/icon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--En-tête de la page-->
+  <header role="header" id="test">
+    <div class="inner">
+      <div class="m-left">
+        <object data=".dist/pic/icon.png" height="50px"></object>
+      </div>
+      <div class="m-center">
+        <a class="blanc" href="#">
+          <h1 class="Note-Title" id="noteTitle" onclick="window.location.reload();">Balance ton .mm !</h1>
+        </a>
+      </div>
+      <div>
+        <object id="logo-cache" data=".dist/pic/upload.png" height="50px"></object>
+      </div>
+    </div>
+    <button id="toogle" onclick=changeFormat()></button>
+    <script>function changeFormat() {
+      console.log("coucou")
+      if (document.getElementById("Titre").style.display="none") {
+        document.getElementById("Corps").style.display = "flex";
+        document.getElementById("Titre").style.display = "none";
+      } else {
+        document.getElementById("Corps").style.display = "none";
+        document.getElementById("Titre").style.display = "flex";
+      }
+    }</script>
+  </header>
+  <!--Fin en-tête de la page-->
+
+  <!-- Toute la partie bouton   -->
+  <div class="boutonV" id="insertPage">
+
+    <!-- Debut de la partie bouton upload -->
+    <div class="imageUpload">
+
+      <button type="submit" class="button1">
+        <label for="input">
+          <img id="imgFile" src=".dist/pic/upload.svg" height="100" width="120" />
+          <div class="TextUp" id="textInsert">Veuillez inserer votre mind map</div>
+        </label>
+        <input type="file" id="input">
+      </button>
+
+    </div>
+    <!-- Fin de la partie bouton upload -->
+
+
+    <div class="container">
+
+      <button type="button" class="button1" name="boutonValider" id="boutonValider">Valider</button>
+    </div>
+  </div>
+  <!-- Fin de toute la partie bouton -->
+  <div id="Corps" class="Corps">
+    <div id="repaire">
+    </div>
+  </div>
+  <div class="Titre" id="Titre">
+    <ul id="Liste1"></ul>
+  </div>
+
+  <footer class="footer">
+
+    <div class="center">
+
+      <a class="linkedin" href="https://www.isen-lille.fr/ecole-ingenieur-numerique/equipe/">
+        <p>© Junia ISEN 2022</p>
+      </a>
+      <p>|</p>
+      <a class="linkedin" href="https://www.linkedin.com/in/clovis-adeler-1a116b198/">
+        <p>Clovis Adeler</p>
+      </a>
+      <a class="linkedin" href="https://www.linkedin.com/in/françois-d-harcourt-75477a196/">
+        <p>François d'Harcourt</p>
+      </a>
+      <a class="linkedin" href="https://www.linkedin.com/in/zélie-dufour-hoofd-b6a17a196/">
+        <p>Zélie Dufour Hoofd</p>
+      </a>
+      <a class="linkedin" href="https://www.linkedin.com/in/wandrille-guiraud-041780196/">
+        <p>Wandrille Guiraud</p>
+      </a>
+      <a class="linkedin" href="https://www.linkedin.com/in/paul-herbeau-a66420116/">
+        <p>Paul Herbeau</p>
+      </a>
+      <a class="linkedin" href="https://www.linkedin.com/in/felix-jallageas-50b921194/">
+        <p>Félix Jallageas</p>
+      </a>
+      <a class="linkedin" href="https://www.linkedin.com/in/victor-loos-780b70201/">
+        <p>Victor Loos</p>
+      </a>
+      <a class="linkedin" href="https://www.linkedin.com/in/charles-skorupka-47a169198/">
+        <p>Charles Skorupka</p>
+      </a>
+
+    </div>
+  </footer>
+  <script type="text/javascript" src=".dist/script/upload.js"></script>
+  <script type="module" src="main.js"></script>
+
+</body>
+
+</html>

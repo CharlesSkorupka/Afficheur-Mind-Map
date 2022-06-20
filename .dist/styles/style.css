@@ -1,0 +1,244 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    background-color: #2C2C2C;
+    font-family: 'Be Vietnam Pro', 'Courier New', Courier, monospace;
+}
+
+
+/* Dédut du header */
+
+header {
+    /* garde le header toujours en haut de page et audessus des autres éléments */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    background: #6494fbcc;
+    /* couleur avec une opacité de 0.8 */
+    width: 100%;
+    height: 66px;
+    line-height: 66px;
+    /* hauteur de ligne */
+}
+
+.inner {
+    /* réduit sa taille pour espacer automatiquement même avec des élements en float */
+    width: 95%;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+}
+
+.m-left {
+    margin-top: 6px;
+}
+
+.upload {
+    margin-top: 6px;
+}
+
+.Note-Title {
+    margin: 0;
+    padding: 0;
+}
+
+.blanc {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Fin du header */
+
+ul {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    list-style: none;
+    margin-top: 200px;
+}
+
+li {
+    font-size: 1.2rem;
+    padding: 20px 30px;
+    margin: 10px 0;
+    background: rgb(23, 23, 23);
+    z-index: 5;
+    position: relative;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    z-index: -1;
+    transition: all .4s;
+}
+
+li:hover::before {
+    width: 100%;
+}
+
+ul li:nth-child(1)::before {
+    background: rgb(100, 148, 251, 0.8);
+}
+
+ul li ul li:nth-child(1)::before {
+    background-color: transparent;
+}
+
+ul li:nth-child(2)::before {
+    background: #db4437;
+}
+
+ul li ul li:nth-child(2)::before {
+    background-color: transparent;
+}
+
+ul li:nth-child(3)::before {
+    background: #f5b400;
+}
+
+ul li ul li:nth-child(3)::before {
+    background-color: transparent;
+}
+
+ul li:nth-child(4)::before {
+    background: #0f9d58;
+}
+
+ul li ul li:nth-child(4)::before {
+    background-color: transparent;
+}
+
+li:hover {
+    transform: translateX(20px);
+}
+
+.Titre {
+    display: flex;
+    justify-content: center;
+}
+
+.hid {
+    display: none;
+}
+
+.Front:hover #hid {
+    display: block;
+}
+
+.Front #hid {
+    display: none;
+}
+
+ul li ul {
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    text-decoration: none;
+    justify-content: space-between;
+    color: #707070;
+    width: 95%;
+    display: flex;
+    bottom: 0;
+    position: relative;
+    margin: auto;
+    padding-top: 100px;
+    font-size: small;
+}
+
+.linkedin {
+    text-decoration: none;
+    color: #707070;
+}
+
+
+/* --- Partie page de Texte --- */
+
+.Corps {
+    margin-top: 100px;
+    display: flex;
+    align-items: 100%;
+    flex-direction: column-reverse;
+}
+
+.Block0 {
+    display: none;
+}
+
+
+.Block1 {
+    display: flex;
+    font-size: 5em;
+    margin: 5% 10% 0% 10%;
+    left: 0em;
+    width: 100%;
+    font-style: bold;
+}
+.Block2 {
+    display: flex;
+    left : 30%;
+    width: 4em;
+    margin: 0px 10% 0px 13%;
+    width: 100%;
+    font-size:3em;
+}
+.Block3 {
+    display: flex;
+    padding: 5px;
+    font-size: 1.5em;
+    margin: 0px 10% 0px 16%;
+    width: 100%;
+}
+.Block4 {
+    display: flex;
+    padding: 5px;
+    width: 100%;
+    font-size: 1.5em;
+    margin: 0px 10% 0px 18%;
+    left : 5em;
+}
+.Block5 {
+    display: flex;
+    padding: 5px;
+    width: 100%;
+    font-size: 1.5em;
+    margin: 0px 10% 0px 21%;
+}
+.Block6 {
+    display: flex;
+    padding: 5px;
+    width: 100%;
+    font-size: 1.5em;
+    margin: 0px 10% 0px 24%;
+}
+.Block7 {
+    display: flex;
+    padding: 5px;
+    width: 100%;
+    font-size: 1.5em;
+    margin: 0px 20% 0px 27%;
+}
+
+
+ul li li li {
+    background-color: #2C2C2C;
+}
+
+ul li li li li {
+    background-color: #2C2C2C;
+}
+
+ul li li li li li {
+    background-color: #2C2C2C;
+}
